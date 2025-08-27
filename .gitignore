@@ -9,7 +9,10 @@ __pycache__/
 .idea/
 
 # hojas de calculo
-.xlsx
+*.xlsx
+
+# archivos .csv
+*.csv
 
 # Archivos del sistema
 .DS_Store
