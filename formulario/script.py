@@ -7,11 +7,11 @@ ruta_csv = "datos.csv"
 hoja = "Hoja1"
 
 # 1. Cargar datos del CSV
-df = pd.read_csv(ruta_csv)
+df = pd.read_csv("ruta csv")
 
 # 2. Abrir el Excel existente
-wb = load_workbook(ruta_excel)
-ws = wb[hoja]
+wb = load_workbook("ruta hoja de calculo")
+ws = wb["Hoja 1"]
 
 # Mapear cada mes a sus columnas en el Excel (ajusta según tu archivo)
 columnas = {
@@ -36,5 +36,5 @@ for index, row in df.iterrows():
             ws.cell(row=fila, column=columnas[mes]["mora"], value=mora)
 
 # 4. Guardar
-wb.save("plantilla_actualizada.xlsx")
+wb.save("plantilla_actualizada1.xlsx")
 print("✅ Excel actualizado con los datos del CSV")
