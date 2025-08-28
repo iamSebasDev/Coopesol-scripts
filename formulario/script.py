@@ -33,6 +33,10 @@ columnas = {
     "ene-25": {"capital": 34, "interes": 35, "mora": 36},
     "feb-25": {"capital": 37, "interes": 38, "mora": 39},
     "mar-25": {"capital": 40, "interes": 41, "mora": 42},
+    "abr-25": {"capital": 43, "interes": 44, "mora": 45},
+    "may-25": {"capital": 46, "interes": 47, "mora": 48},
+    "jun-25": {"capital": 49, "interes": 50, "mora": 51},
+    "jul-25": {"capital": 52, "interes": 53, "mora": 54},
 }
 
 # 3. Rellenar datos con los valores SUMADOS
@@ -63,5 +67,5 @@ for index, row in df_agrupado.iterrows():
         print(f"✗ NO encontrado: {numero_asociado}")
 
 # 4. Guardar
-wb.save("plantillaEnero2.xlsx")
+wb.save("plantilla2025.xlsx")
 print("\n✅ Excel actualizado con los datos SUMADOS del CSV")
